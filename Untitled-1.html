@@ -46,8 +46,117 @@
                 </p>
             </div>
         </section>
-        
+        <section>
+            <h2>Contactanos</h2>
+            <div>
+                <img src="180e87b8-efe7-4e85-8791-0784ce30b015.jpg" alt="contacto"
+                height="205" >
+            </div>
+            <div>
+                <form action="">
+                    <p>
+                        <label for="nombre">Registro:</label><br>
+                        <label for="">
+                            <input type="radio" name="titulo" value="sr">
+                            sr
+                        </label>
+                        <label for=""></label>
+                            <input type="radio" name="titulo" value="sra">
+                            sra
+                        </label>
+                        <label for=""></label>
+                            <input type="radio" name="titulo" value="srta">
+                            srta
+                        </label>
+                    </p>
+                    <p>
+                        <label for="nombres">Nombres</label><br>
+                        <input type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')" required>
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')" required>
+                    <p>
+                        <label for="email">Correo Electrónico</label><br>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@unamad.edu.pe" required>
+                    </p>
+                    <p>
+                        <label for="direccion">Dirección</label><br>
+                        <input type="text" name="direccion" placeholder="Ingrese su direccion actual">
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" title="Debe contener 9 dígitos" placeholder="Ingrese su número de teléfono" required>
+                    </p>
+                    <p>
+                        <label for="regiones">Regiones</label>
+                        <select>
+                            <option value="0">Seleccione su Región Actual</option>
+                            <option value="1">Madre de Dios</option>
+                            <option value="2">Cusco</option>
+                            <option value="3">Puno</option>
+                            <option value="4">Ayacucho</option>
+                            <option value="5">Apurimac</option>
+                            <option value="6">Lima</option>
+                            <option value="7">Tacna</option>
+                            <option value="8">Piura</option>
+                            <option selected ="true">Ucayali</option>
 
+                            
+                        </select>
+                    </p>
+                    <p>
+                        <button>Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </p>
+                    
+                </form>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Escuela Profesional</th>
+                            <th>Género</th> 
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td>Juan</td>
+                            <td>Perez</td>
+                            <td>Ingeniería en Sistemas</td>
+                            <td rowspan="2">Masculino</td>
+                        </tr>
+             
+                        <tr>
+                            <td>Pedro</td>
+                            <td>Lopez</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Maria</td>
+                            <td>Garcia</td>
+                            <td>Licenciatura en Comunicación</td>
+                            <td rowspan="2">Femenino</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ana</td>
+                            <td>Jimenez</td>
+                            <td>Medicina</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
+
+
 </body>
 </html>
